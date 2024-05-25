@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<title>HomeSweetHome - Cucina</title>
 		<link rel="stylesheet" href="css/styles.css">	
+	
 	</head>
 
 	<body>
@@ -20,18 +21,27 @@
 		<section id="bottom">
 			<header><h2>Dispositivi</h2></header>
 			<div id="tableDispositivi">
-				<div class = "dispositivi">
-					<div><img src="img/lightBulb_ON.png" alt="ON"></div><div>principale</div>
+				<div class = "dispositivi" onclick="PRINCIPALE.switch()">
+					<div>
+						<img id="PRINCIPALE">
+					</div>
+					<div>principale</div>
 				</div>
-				<div class = "dispositivi">
-					<div><img src="img/lightBulb_OFF.png" alt="OFF"></div><div>sottopensile</div>
+				<div class = "dispositivi" onclick="SOTTO_PENSILE.switch()">
+					<div>
+						<img id="SOTTO_PENSILE">
+					</div>
+					<div>sottopensile</div>
 				</div>
 			</div>
 		</section>
 		
 		<footer id="back">
 			<a href="index.html"><img src="img/back.png" alt="BACK"/></a> 
-		</footer>		
+		</footer>	
+		
+		<script src="js/lightBulb.js"></script>
+		<script src="js/cucina.js"></script>
 		
 	</body>
 	
