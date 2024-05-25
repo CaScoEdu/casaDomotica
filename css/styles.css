@@ -1,0 +1,103 @@
+body {
+	font-family: verdana;
+	background-color: #999999;
+}
+
+h1{
+	text-align: center;
+	color: yellow;
+}
+
+h2 {
+	text-align: center;
+}
+
+/* div in alto */
+
+#top {
+	background-color: #555555;
+  	margin: 0;
+  	border: 1px solid #aaaaaa;
+}
+
+/* div al centro */
+
+#middle {
+	background-color: #cccccc;
+  	margin: 0;
+  	border: 1px solid #aaaaaa;
+}
+
+/* div in basso */
+
+#bottom {
+	background-color: yellow;
+  	margin: 0;
+  	border: 1px solid #aaaaaa;
+}
+
+.linkAmbienti {
+	width: 25%;
+}
+
+/* tabella della Home page con le informazioni sul tempo */
+
+#tableWeather {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* tabella della Home page con i link agli ambienti */
+
+#tableAmbienti {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* tabella delle pagine delle stanze con le informazioni sui dispositivi */
+
+#tableDispositivi {
+	width: 30%;
+}
+
+/* impostazioni per centrare le immagini */
+
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+#homeImage
+{
+  width: 20%;
+}
+
+.ambientImage
+{
+  width: 20%;
+}
+
+#roomImage
+{
+  	width: 12%;
+}
+
+.weatherData {
+	width: 20%;
+	text-align: center;	
+}
+
+/* pulsante per tornare alla pagina iniziale dalle pagine delle stanze */
+
+#back {
+	float: left;
+	color: white;
+}
+
+.dispositivi {
+	display: flex;
+}
