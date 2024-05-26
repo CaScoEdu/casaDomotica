@@ -5,7 +5,7 @@ setInterval(aggiornaDatiMeteo, 60000);
 
 function aggiornaDatiMeteo() {
 
-    const REQUEST_URL = "data/datiMeteo.json";
+    const REQUEST_URL = "https://api.open-meteo.com/v1/forecast?latitude=45.6486&longitude=9.3073&current=temperature_2m,weather_code,wind_speed_10m&daily=sunrise,sunset&timezone=Europe%2FBerlin&forecast_days=1";
 
     const REQUEST = new XMLHttpRequest();
 
