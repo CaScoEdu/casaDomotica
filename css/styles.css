@@ -40,6 +40,12 @@ h2 {
 	width: 25%;
 }
 
+.linkAmbienti:hover {
+	background-color: lemonchiffon;
+}
+
+
+
 /* tabella della Home page con le informazioni sul tempo */
 
 #tableWeather {
@@ -98,6 +104,14 @@ h2 {
 	color: white;
 }
 
+#back:hover {
+	background-color: lemonchiffon;
+}
+
 .dispositivi {
 	display: flex;
+}
+
+.dispositivi:hover {
+	background-color: lemonchiffon;
 }

@@ -17,7 +17,7 @@
     "time": "2024-05-25T18:15",
     "interval": 900,
     "temperature_2m": 19.6,
-    "weather_code": 2,
+    "weather_code": 1,
     "wind_speed_10m": 1.5
   },
   "daily_units": {

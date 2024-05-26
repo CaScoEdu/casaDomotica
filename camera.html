@@ -20,18 +20,26 @@
 		<section id="bottom">
 			<header><h2>Dispositivi</h2></header>
 			<div id="tableDispositivi">
-				<div>
-					<div><img src="img/lightBulb_ON.png" alt="ON"></div><div>principale</div>
+				<div class = "dispositivi" onclick="PRINCIPALE.switch()">
+					<div><img id="PRINCIPALE">
+					</div>
+					<div>principale</div>
 				</div>
-				<div>
-					<div><img src="img/lightBulb_OFF.png" alt="OFF"></div><div>abat-jour</div>
+				<div class = "dispositivi" onclick="ABAT_JOUR.switch()">
+					<div>
+						<img id="ABAT_JOUR">
+					</div>
+					<div>abat-jour</div>
 				</div>
 			</div>
 		</section>
 		
 		<footer id="back">
 			<a href="index.html"><img src="img/back.png" alt="BACK"/></a> 
-		</footer>		
+		</footer>
+		
+		<script src="js/lightBulb.js"></script>
+		<script src="js/camera.js"></script>
 		
 	</body>
 </html>

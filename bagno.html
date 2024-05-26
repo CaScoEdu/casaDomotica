@@ -20,18 +20,27 @@
 		<section id="bottom">
 			<header><h2>Dispositivi</h2></header>
 			<div id="tableDispositivi">
-				<div>
-					<div><img src="img/lightBulb_ON.png" alt="ON"></div><div>principale</div>
+				<div class = "dispositivi" onclick="PRINCIPALE.switch()">
+					<div>
+						<img id="PRINCIPALE" src="img/lightBulb_OFF.png" alt="ON">
+					</div>
+					<div>principale</div>
 				</div>
-				<div>
-					<div><img src="img/lightBulb_OFF.png" alt="OFF"></div><div>specchio</div>
+				<div class = "dispositivi" onclick="SPECCHIO.switch()">
+					<div>
+						<img id="SPECCHIO" src="img/lightBulb_OFF.png" alt="OFF">
+					</div>
+					<div>specchio</div>
 				</div>
 			</div>
 		</section>
 		
 		<footer id="back">
 			<a href = "index.html"><img src="img/back.png" alt="BACK"/></a> 
-		</footer>		
+		</footer>	
+		
+		<script src="js/lightBulb.js"></script>
+		<script src="js/bagno.js"></script>
 		
 	</body>
 	
