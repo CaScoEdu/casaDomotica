@@ -1,23 +1,24 @@
 
 
-let REQUEST_URL = "data/datiMeteo.json";
+aggiornaDatiMeteo();
+setInterval(aggiornaDatiMeteo,60000);
 
-let REQUEST = new XMLHttpRequest();
-
-REQUEST.open("get", REQUEST_URL, true);
-
-REQUEST.responseType = "json";
-
-REQUEST.send();
-
-REQUEST.onload = function () {
-
-}
-
-REQUEST.onload = function () {
+function aggiornaDatiMeteo() {
     
-    const datiMeteo = REQUEST.response;
-    const TEMPERATURA = document.getElementById("TEMPERATURA");
-    TEMPERATURA.innerHTML= datiMeteo.current.temperature_2m;
-   
+    const REQUEST_URL = "data/datiMeteo.json";
+
+    const REQUEST = new XMLHttpRequest();
+
+    REQUEST.open("get", REQUEST_URL, true);
+
+    REQUEST.responseType = "json";
+    
+    REQUEST.send();
+
+    REQUEST.onload = function () {
+
+        const datiMeteo = REQUEST.response;
+        const TEMPERATURA = document.getElementById("TEMPERATURA");
+        TEMPERATURA.innerHTML = datiMeteo.current.temperature_2m + "&#176";
+    }
 }
